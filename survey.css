@@ -1,0 +1,83 @@
+body {
+    color: white;
+    background-color: rgb(28, 104, 115);
+    background-image: url("https://i.postimg.cc/NFhmc32s/movies.jpg");
+    background-size: 100%;
+    height: auto;
+  }
+  #container {
+    margin-top: 0px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(28, 104, 115, 0.9);
+    height: auto;
+    border: white solid;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #title {
+    color: #731C33;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  #name-label, #email-label {
+    padding-right: 60%;
+  }
+  #name-label, #email-label, #number-label {
+    font-size: 1.2em;
+  }
+  #name, #email {
+    width: 75%;
+  }
+  #number {
+    width: 65px;
+  }
+  #name, #email, #number, #movie-genre, #watch, #eat {
+    margin-bottom: 25px;
+  }
+  #dropdown {
+      margin-bottom: 25px;
+    }
+  #watch, #eat {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #731C33 solid 3px;
+  }
+  #comments {
+    width: 75%;
+    font-size: 1.1em;
+  }
+  #submit {
+    margin: 10px auto 25px auto;
+  }
+@media (min-width: 768px) and (max-width: 991px) {
+  #container {
+    width: 550px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #container {
+    width: 75%;
+  }
+}
+@media (max-width: 575px) {
+  #container {
+    width: 80%;
+  }
+  #watch, #eat {
+    width: 90%;
+  }
+  #comments {
+    width: 95%;
+  }
+  #name, #email {
+    width: 95%;
+  }
+}

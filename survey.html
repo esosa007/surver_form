@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="survey.css" rel="stylesheet">
+    <title>Movie Survey Form</title>
+</head>
+<body>
+  <div id="container">
+     <h1 id="title">Movie Survey Form</h1>
+     <h4>How do you prefer to watch Movies?</h4>
+     <form id="survey-form">
+       <label id="name-label" for="name">Name:</label><br>
+         <input id="name" type="text" placeholder="Enter your Full Name" required><br>
+       <label id="email-label" for="email">Email:</label><br>
+         <input id="email" type="email" required placeholder="Please enter a valid email address, e.g. 'juan@somewhere.com'"><br>
+       <label id="number-label" for="number">How often do you go to the movies per month?
+         <input id="number" type="number" required placeholder="Enter #" min="0" max="30"></label><br>
+      <label for="movie-genre"> Favorite Movie Genre:
+       <select name="movie-genre" id="dropdown">
+         <option value="action">Action</option>
+         <option value="comedy">Comedy</option>
+         <option value="documentary">Documentary</option>
+         <option value="drama">Drama</option>
+         <option value="foreign">Foreign</option>
+         <option value="other">Other</option>
+       </select>
+      </label><br>
+      <fieldset id="watch"><legend>How do you prefer to watch movies?</legend>
+       <label for="home"><input id="home" type="radio" name="method" value="home"> Home</label>
+       <label for="theater"><input id="theater" type="radio" name="method" value="theater"> Theater</label>
+       <label for="drive-in"><input id="drive-in" type="radio" name="method" value="drive-in"> Drive-In</label><br>
+      </fieldset>
+      <fieldset id="eat"><legend>What do you prefer to eat while watching movies?</legend>
+       <label for="popcorn"><input id="popcorn" value="popcorn" type="checkbox" name="food"> Popcorn</label>
+       <label for="nachos"><input id="nachos" value="nachos" type="checkbox" name="food"> Nachos</label>
+       <label for="candy"><input id="candy" value="candy" type="checkbox" name="food"> Candy</label><br>
+      </fieldset>
+       <label for="comments">
+         <textarea id="comments" name="comments" rows="5" cols="47" placeholder="Enter additional comments here!"></textarea>
+        </label><br>
+       <button id="submit" type="submit">Submit</button>
+     </form>
+  </div>
+</body>
+</html>
